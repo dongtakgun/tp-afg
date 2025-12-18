@@ -1,9 +1,9 @@
-package com.example.demo.presentation.api;
+package com.example.demo.presentation.user;
 
 import com.example.demo.application.user.UserService;
 import com.example.demo.application.user.dto.UserResponse;
-import com.example.demo.presentation.api.request.LoginRequest;
-import com.example.demo.presentation.api.request.SignUpRequest;
+import com.example.demo.presentation.user.request.LoginRequest;
+import com.example.demo.presentation.user.request.SignUpRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

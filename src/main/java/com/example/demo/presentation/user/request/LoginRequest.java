@@ -1,4 +1,4 @@
-package com.example.demo.presentation.api.request;
+package com.example.demo.presentation.user.request;
 
 import com.example.demo.application.user.dto.LoginCommand;
 import jakarta.validation.constraints.Email;
