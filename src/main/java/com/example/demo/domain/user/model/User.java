@@ -6,6 +6,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
+// User 클래스는 모든 필드를 파라미터로 받는 생성자를 만든다.
 public class User {
 
     private final Long id;
@@ -14,10 +15,8 @@ public class User {
     private final String country;
     private final String phoneNumber;
 
-    /**
-     * 새 사용자 생성용 정적 팩토리 메서드
-     * ID는 null (DB 저장 시 생성됨)
-     */
+    // 새 사용자 생성용 정적 팩토리 메서드
+    // ID는 null (DB 저장 시 생성됨)
     public static User create(Email email, Password password, String country, String phoneNumber) {
         return new User(null, email, password, country, phoneNumber);
     }
