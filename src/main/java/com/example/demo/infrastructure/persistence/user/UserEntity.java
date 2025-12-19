@@ -38,9 +38,9 @@ public class UserEntity {
         this.phoneNumber = phoneNumber;
     }
 
-    /**
-     * Domain -> Entity 변환
-     */
+
+     //Domain -> Entity 변환
+
     public static UserEntity from(User user) {
         return new UserEntity(
                 user.getId(),
@@ -51,9 +51,9 @@ public class UserEntity {
         );
     }
 
-    /**
-     * Entity -> Domain 변환
-     */
+
+     //Entity -> Domain 변환
+
     public User toDomain() {
         return User.reconstitute(
                 this.id,

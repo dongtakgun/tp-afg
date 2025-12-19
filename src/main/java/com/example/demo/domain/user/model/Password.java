@@ -10,10 +10,7 @@ public record Password(String value) {
         }
     }
 
-    /**
-     * Raw password 검증용 정적 메서드
-     * 회원가입 시 사용자가 입력한 비밀번호 유효성 검사
-     */
+
     public static void validateRawPassword(String rawPassword) {
         if (rawPassword == null || rawPassword.isBlank()) {
             throw new IllegalArgumentException("비밀번호는 필수입니다.");
