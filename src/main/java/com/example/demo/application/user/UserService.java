@@ -35,7 +35,7 @@ public class UserService {
         String encodedPassword = passwordEncoder.encode(command.password());
         Password password = new Password(encodedPassword);
 
-        User user = User.create(email, password, command.country(), command.phoneNumber());
+        User user = User.create(command.name(), email, password, command.country(), command.phoneNumber());
 
         User savedUser = userRepository.save(user);
 
